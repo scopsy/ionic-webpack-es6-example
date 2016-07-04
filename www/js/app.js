@@ -1,4 +1,6 @@
 // Ionic Starter App
+import config from './config/app.config';
+import 'ionic.app.scss';
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
@@ -21,4 +23,9 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+})
+.config(config)
+.controller('appCtrl', function($scope){
+    console.log(12312)
+    $scope.hello = "dima";
 })
